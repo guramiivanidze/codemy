@@ -24,12 +24,12 @@
         {% endif %}
     {% endif %}
     <h1>{{ post.title }}</h1>
-    <h1>post author user id : {{ post.author.id }}</h1>
-    <h1>loged in user id: {{ user }}</h1>
     <hr>
     <small >By:  {{ post.author.first_name }} / date: {{ post.post_date }}</small>
     <hr>
     <br />
+    {% if post.header_image %}<img src="{{ post.header_image.url }}" alt="">{% endif %}
+    
     {{ post.body|safe }}
     <br>
     <div style="padding-top: 20px;">
@@ -47,7 +47,6 @@
                             value="{{ post.id }}"
                             class="btn btn-primary btn-sm">like</button>
                 {% endif %}
-                
             {% else %}
                 <small>
                     <a href="{% url 'login' %}">Login</a>

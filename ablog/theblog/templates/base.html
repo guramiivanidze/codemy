@@ -78,9 +78,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{% url 'my_posts' user.id %}">
                                     {% if user.first_name %}
-                                        Posts from user name :  {{ user.first_name }}
+                                        My posts :  {{ user.first_name }}
                                     {% else %}
-                                        Posts from user ID : {{ user.id }}
+                                        Mu posts ID : {{ user.id }}
                                         {{user}}
                                     {% endif %}
                                 </a>

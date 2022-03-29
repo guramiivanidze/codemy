@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
     <h1 style="text-align: center;">my posts</h1>
+    <a href="{% url 'home' %}" class="btn btn-secondary">back to all</a>
     {% for post in my_posts %}
         <hr size="10">
         <ul style="line-height: 10px;">
