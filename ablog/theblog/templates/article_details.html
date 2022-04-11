@@ -4,6 +4,7 @@
 {% endblock title %}
 {% block content %}
     <a href="{% url 'home' %}" class="btn btn-secondary">back</a>
+    <a href="{% url 'home' %}" class="btn btn-secondary">back</a>
     {% if user.is_authenticated %}
         {% if user.id == post.author.id %}
             <div style="padding-top: 10px;" class="nav-item dropdown">
