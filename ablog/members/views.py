@@ -1,5 +1,3 @@
-from re import template
-from sre_constants import SUCCESS
 from django.shortcuts import render
 from django.views import generic
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm, PasswordChangeForm
